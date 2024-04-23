@@ -38,7 +38,7 @@
     cursor: pointer;
     box-shadow: 1px 1px 0px #ffffff;
 }
-/* @keyframes moveLeftToRight {
+@keyframes moveLeftToRight {
     from { transform: translateX(-100%); }
     to { transform: translateX(100%); }
   }
@@ -46,7 +46,7 @@
   @keyframes moveRightToLeft {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
-  } */
+  }
   
   .images {
     display: flex;

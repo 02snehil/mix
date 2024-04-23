@@ -68,6 +68,10 @@
 .img9 img {
     display: none; 
 }
+/* @keyframes animate {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }  */
 
 @media screen and (min-width: 768px) {
     .img9 img {
