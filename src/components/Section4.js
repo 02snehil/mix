@@ -30,7 +30,7 @@ function Section4(){
                         <img src={icon4_1} alt='icon4_1'/>
                       </div>
                       <div className='subtext4_1'>
-                        <p><b>Built a profile for free</b></p>
+                        <b>Built a profile for free</b>
                         <p>Qualify for jobs at top product startups</p><br/><br/>
                       </div>
                     </div>
@@ -39,7 +39,7 @@ function Section4(){
                         <img src={icon4_2} alt='icon4_2'/>
                       </div>
                       <div className='subtext4_2'>
-                        <p><b>Stand out to recruiters</b></p>
+                        <b>Stand out to recruiters</b>
                         <p>Globally-competitive salary based on your skills.</p><br/><br/>
                       </div>
                     </div>
@@ -48,7 +48,7 @@ function Section4(){
                         <img src={icon4_3} alt='icon4_3'/>
                       </div>
                       <div className='subtext4_3'>
-                        <p><b>Get offers with zero salary negotiations.</b></p>
+                        <b>Get offers with zero salary negotiations.</b>
                         <p >Get interviews on your calendar directly on device</p><br/><br/>
                       </div>
                     </div>

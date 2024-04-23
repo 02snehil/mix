@@ -13,10 +13,11 @@
     margin-left: 150px;
 }
 
-.logo1 h4 {
-    color: #FFFFFF;
+.logo1 p {
+    color: #efefef;
     margin: 0; /* Remove default margin */
     font-size: 18px; /* Adjust font size */
+
 }
 
 .login {
@@ -24,14 +25,18 @@
     display: flex; /* Added for mobile view */
 }
 
-.login-content {
+.login-content,
+.signup-content 
+{
     display: flex;
     align-items: center;
 }
 
-.login_button {
+
+.signup_button 
+{
     border: none;
-    border-radius: 25px; /* Adjust border-radius */
+    border-radius: 10px; /* Adjust border-radius */
     color: #FFFFFF;
     background-color: #683FBE;
     padding: 10px 20px; /* Adjust padding */
@@ -39,8 +44,20 @@
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add transition effect */
 }
+.login-content button{
+    border: none;
+    border-radius: 10px; /* Adjust border-radius */
+    color: #FFFFFF;
+    background-color: #683FBE;
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    margin-top: 2px;
+}
 
-.login_button:hover {
+.login_button:hover,
+.signup_button:hover {
     background-color: #512a8e; /* Change background color on hover */
 }
 
@@ -56,7 +73,16 @@
     left: 0;
     width: 100%;
     z-index: 99; /* Ensure it's above other elements */
-    background-color: #333;
+    background: rgba(104, 64, 191, 0.937);
+
+    background: radial-gradient(circle, hsla(259, 50%, 50%, 1) 0%, hsla(226, 83%, 7%, 1) 100%);
+
+    background: -moz-radial-gradient(circle, hsla(259, 50%, 50%, 1) 0%, hsla(226, 83%, 7%, 1) 100%);
+
+    background: -webkit-radial-gradient(circle, hsla(259, 50%, 50%, 1) 0%, hsla(226, 83%, 7%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#683FBE", endColorstr="#030A21", GradientType=1 );
+
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
@@ -92,7 +118,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    .logo1 h4 {
+    .logo1 p {
         display: none;
     }
 
@@ -102,18 +128,54 @@
 
     .mobile-menu {
         top: 50px; /* Adjust top position */
+        width: 60%;
+        font-size: .7em;
+    }
+    .close-menu{
+        font-size: 1.4em;
+        height: 5px;
+        margin-top: -15px;
+
+    }
+    .close-menu img{
+        width: 11px;
+        height: 12px;
+        margin-left: -10px;
+        margin-top: 1px;
     }
 
     .login {
         display: flex; /* Display login content in mobile view */
         margin-right: 10; /* Remove right margin */
-        margin-left: -50px; /* Adjust left margin */
+        margin-left: -60px; /* Adjust left margin */
     }
 
-    .login_button {
-        margin-left: 10px; /* Add some spacing between login button and gift icon */
+    .login_button, .signup_button {
+        margin-left: 0px; /* Add some spacing between login button and gift icon */
         height: 30px;
-        font-size: .8em;
+        font-size: .9em;
+        width: 80px;
+        margin-top:-2px;
+        padding: 0;
 
     }
+    .login-content button{
+        margin-top: -1px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 0;
+       
+    }
+    .signup-content button{
+        border-radius: 5px;
+        text-align: center;
+        padding: 0;
+    }
+    .login-content b{
+        margin-top: -3px;
+        padding: 0;
+    }
+   
+
+
 }

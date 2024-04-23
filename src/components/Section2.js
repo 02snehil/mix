@@ -48,7 +48,7 @@ function Section2(){
                         experts in the field.
                     </h4>
                     <button className="explore_programs">
-                        <b>Explore Programs</b>
+                        Explore Programs
                     </button>
                 </div>
                 <div className="paragraph">

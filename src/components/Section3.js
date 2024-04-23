@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Section3.css";
 import img3_1_1 from './image/img3_1_1.png'
 import img3_1_2 from './image/img3_1_2.png'
@@ -11,145 +11,113 @@ import logo3_1_3 from './image/logo3_1_3.png'
 import logo3_1_4 from './image/logo3_1_4.png'
 import logo3_1_5 from './image/logo3_1_5.png'
 
-function Section3(){
+function Section3() {
+    
+    const [slideIndex, setSlideIndex] = useState(0);
 
-    return(
+    const alumniData = [
+        {
+            name: "Rishabh Dev",
+            position: "Co Founder",
+            image: img3_1_1,
+            logo: logo3_1_1
+        },
+        {
+            name: "Abhishek Shukla",
+            position: "Principal Product Manager",
+            image: img3_1_2,
+            logo: logo3_1_2
+        },
+        {
+            name: "Prashanth Bhaskaran",
+            position: "Product Manager",
+            image: img3_1_3,
+            logo: logo3_1_3
+        },
+        {
+            name: "Akash Daga",
+            position: "SDE-III",
+            image: img3_1_4,
+            logo: logo3_1_4
+        },
+        {
+            name: "Kumar Utsav",
+            position: "Product Manager",
+            image: img3_1_5,
+            logo: logo3_1_5
+        },
+        {
+            name: "Rishabh Dev",
+            position: "Co Founder",
+            image: img3_1_1,
+            logo: logo3_1_1
+        },
+        {
+            name: "Abhishek Shukla",
+            position: "Principal Product Manager",
+            image: img3_1_2,
+            logo: logo3_1_2
+        },
+        {
+            name: "Prashanth Bhaskaran",
+            position: "Product Manager",
+            image: img3_1_3,
+            logo: logo3_1_3
+        },
+        {
+            name: "Akash Daga",
+            position: "SDE-III",
+            image: img3_1_4,
+            logo: logo3_1_4
+        },
+        {
+            name: "Kumar Utsav",
+            position: "Product Manager",
+            image: img3_1_5,
+            logo: logo3_1_5
+        },
+        // Add more alumni data objects as needed
+    ];
+    
+
+
+    const nextSlide = () => {
+        setSlideIndex((prevIndex) => prevIndex + 1);
+    };
+
+    const prevSlide = () => {
+        setSlideIndex((prevIndex) => prevIndex - 1);
+    };
+
+    return (
         <>
             <div className="container3">
                 <div className="heading3">
-                   <p>Check out <span> our Pesto alumni.</span></p>
+                    <p>Check out <span> our Pesto alumni.</span></p>
                 </div>
                 <div className="alumi_intro">
-                    <div className="line1">
-                        <div className="intro1">
+                    {alumniData.slice(slideIndex, slideIndex + 4).map((alumni, index) => (
+                        <div className="intro1" key={index}>
                             <div className="intro1_1">
-                              <img src={img3_1_1} alt="img_3_1_1" />
+                                <img src={alumni.image} alt={`img_${slideIndex + index + 1}`} />
                             </div>
                             <div className="intro1_2">
-                                <p className="p3_1">Rishabh Dev</p>
-                                <p className="p3_2">Co Founder</p>
+                                <p className="p3_1">{alumni.name}</p>
+                                <p className="p3_2">{alumni.position}</p>
                             </div>
                             <div className="intro1_3">
-                                <img src={logo3_1_1} alt="logo3_1_1" /> 
+                                <img src={alumni.logo} alt={`logo_${slideIndex + index + 1}`} />
                             </div>
                         </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_2} alt="img_3_1_2" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Abhishek Shukla</p>
-                                <p className="p3_2">Principle Product Manager</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_2} alt="logo3_1_2" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_3} alt="img_3_1_3" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Prashanth Bhaskaran</p>
-                                <p className="p3_2">Product Manager</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_3} alt="logo3_1_3" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_4} alt="img_3_1_4" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Akash Daga</p>
-                                <p className="p3_2">SDE-III</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_4} alt="logo3_1_4" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_5} alt="img_3_1_4" />
-                            </div>
-                            <div className="intro1_2">
-                            <p className="p3_1">Kumar Utsav</p>
-                                <p className="p3_2">Product Manager</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_5} alt="logo3_1_5" /> 
-                            </div>
-                        </div>
-                    </div>
-
-
-                    
-                    <div className="line2">
-                        <div className="intro1">
-                            <div className="intro1_1">
-                              <img src={img3_1_1} alt="img_3_1_1" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Rishabh Dev</p>
-                                <p className="p3_2">Co Founder</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_1} alt="logo3_1_1" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_2} alt="img_3_1_2" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Abhishek Shukla</p>
-                                <p className="p3_2">Principle Product Manager</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_2} alt="logo3_1_2" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_3} alt="img_3_1_3" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Prashanth Bhaskaran</p>
-                                <p className="p3_2">Product Manager</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_3} alt="logo3_1_3" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_4} alt="img_3_1_4" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Akash Daga</p>
-                                <p className="p3_2">SDE-III</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_4} alt="logo3_1_4" /> 
-                            </div>
-                        </div>
-                        <div className="intro1">
-                           <div className="intro1_1">
-                              <img src={img3_1_5} alt="img_3_1_5" />
-                            </div>
-                            <div className="intro1_2">
-                                <p className="p3_1">Kumar Utsav</p>
-                                <p className="p3_2">Product Manager</p>
-                            </div>
-                            <div className="intro1_3">
-                                <img src={logo3_1_5} alt="logo3_1_5" /> 
-                            </div>
-                        </div>
-                    </div>
+                    ))}
+                </div>
+                <div className="navigation">
+                    <button onClick={prevSlide} disabled={slideIndex === 0}>{'<'}</button>
+                    <button onClick={nextSlide} disabled={slideIndex >= alumniData.length - 4}>{'>'}</button>
                 </div>
             </div>
         </>
     );
 }
+
 export default Section3;

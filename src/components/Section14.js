@@ -31,22 +31,22 @@ function Section14(){
                        </div>
                   </div>
                   <div className="container14-heading-right">
-                    <div className="container14-heading-right-company">
-                        <p className="p14_1">Company</p>
-                        <p>About Us</p>
-                        <p>Blog</p>
-                        <p>Home</p>
-                    </div>
-                    <div className="container14-heading-right-legal">
-                        <p className="p14_1">Legal</p>
-                        <p>Terms of use</p>
-                        <p>Privacy policy</p>
-                    </div>
-                    <div  className="container14-heading-right-support">
-                        <p className="p14_1">Support</p>
-                        <p>contact@Credmarg.com</p>
-                        <p>+91 9672421830</p>
-                    </div>
+                      <div className="container14-heading-right-company">
+                          <p className="p14_1">Company</p>
+                          <a href="/about-us"><p>About Us</p></a>
+                          <a href="/blog"><p>Blog</p></a>
+                          <a href="/home"><p>Home</p></a>
+                      </div>
+                      <div className="container14-heading-right-legal">
+                          <p className="p14_1">Legal</p>
+                          <a href="/terms" style={{textDecoration:'none', color:'#f0f8ff'}}><p>Terms of use</p></a>
+                          <a href="/privacy"><p>Privacy policy</p></a>
+                      </div>
+                      <div  className="container14-heading-right-support">
+                          <p className="p14_1">Support</p>
+                          <a href="mailto:support@pesto.tech"><p>contact@Credmarg.com</p></a>
+                          <p>+91 9672421830</p>
+                      </div>
                   </div>
                </div>
                <div className="container14-details">
@@ -61,7 +61,7 @@ function Section14(){
                        trading of securities.
                    </p>
                    <p>This Site will be updated on a regular basis.</p>
-                   <p><b>Credmarg Technologies  Private Limited </b>
+                   <p> <span style={{fontWeight:'700'}}>Credmarg Technologies  Private Limited </span>
                       (CIN-: U74999DL2021PTC386817)Registered Contact: +91 9672421830 
                       (contact@Wealthdekho.com)
                    </p> <br/><br/>

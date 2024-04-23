@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import './Section9.css';
 import img9 from './image/img9.png';
+import img9_1 from './image/img9_1.png';
+import img9_2 from './image/img9_2.png';
+import img9_3 from './image/img9_3.png';
+import img9_4 from './image/img9_4.png';
+import img9_5 from './image/img9_5.png';
+import img9_6 from './image/img9_6.png';
+import img9_7 from './image/img9_7.png';
+import img9_8 from './image/img9_8.png';
+import img9_9 from './image/img9_9.png';
 
 function Section9() {
     const [animationCount, setAnimationCount] = useState(0);
@@ -40,6 +49,17 @@ function Section9() {
             </div>
             <div className="img9">
                 <img src={img9} alt="img9" className="animate" />
+            </div>
+            <div className="sliding-images">
+                <img src={img9_1} alt="img9_1" />
+                <img src={img9_2} alt="img9_2" />
+                <img src={img9_3} alt="img9_3" />
+                <img src={img9_4} alt="img9_4" />
+                <img src={img9_5} alt="img9_5" />
+                <img src={img9_6} alt="img9_6" />
+                <img src={img9_7} alt="img9_7" />
+                <img src={img9_8} alt="img9_8" />
+                <img src={img9_9} alt="img9_9" />
             </div>
         </div>
     );

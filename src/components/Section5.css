@@ -68,19 +68,29 @@
     .container5 {
         padding: 20px; /* Adjust padding for smaller screens */
         width: 250px;
+        margin-top: -200px;
     }
+    
 
     .videos5_1,
     .videos5_2 {
         flex-direction: column; /* Change to column layout for smaller screens */    
-        margin-left: 80px;
         margin-top: 10px
     }
+    .videos5_1{
+        width: 0px;
+        margin-left: 30px;
+    }
+
     .videos5_2{
-        margin-left: 40px;
+        margin-left: 75px;
     }
     .videos5_1_2{
-        margin-left: -35px;
+        margin-left: 50px;
+    }
+    .videos5_1_1{
+        margin-left: 85px;
+
     }
 
     .videos5_1_1,

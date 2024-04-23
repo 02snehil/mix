@@ -34,8 +34,8 @@ function Section11(){
                                 <img src={rev11_1_1} alt="rev11_1_1" />
                             </div>
                             <div className="intro11_1_1">
-                                <p><b>Sreejith Nair</b> <br />
-                                    <span style={{color:'#d1d1d1'}}>Product Manager</span></p>
+                                <p>Sreejith Nair <br />
+                                    <span style={{color:'#d1d1d1', fontSize:'.8em'}}>Product Manager</span></p>
                             </div>  
                         </div>
                         <div className='p11_1_2'>
@@ -65,7 +65,7 @@ function Section11(){
                                 <img src={rev11_2_1} alt="rev11_1_1" />
                             </div>
                             <div className="intro11_1_1">
-                                <p><b>Neelam Rajput</b></p>
+                                <p>Neelam Rajput</p>
                                     
                             </div>  
                         </div>
@@ -96,8 +96,8 @@ function Section11(){
                                 <img src={rev11_3_1} alt="rev11_3_1" />
                             </div>
                             <div className="intro11_1_1">
-                                <p><b>Surbhi Sanodiya</b> <br />
-                                    <span style={{color:'#d1d1d1'}}>Social Media Marketor</span></p>
+                                <p>Surbhi Sanodiya <br />
+                                    <span style={{color:'#d1d1d1', fontSize:'.8em'}}>Social Media Marketor</span></p>
                             </div>  
                         </div>
                         <div className='p11_1_2'>
@@ -123,7 +123,7 @@ function Section11(){
                                 <img src={rev11_4_1} alt="rev11_4_1" />
                             </div>
                             <div className="intro11_1_1">
-                                <p><b>Siddhi sharma</b> </p>
+                                <p>Siddhi sharma</p>
                             </div>  
                         </div>
                         <div className='p11_1_2'>
@@ -149,7 +149,7 @@ function Section11(){
                                 <img src={rev11_5_1} alt="rev11_5_1" />
                             </div>
                             <div className="intro11_1_1">
-                                <p><b>Varinder Yadav</b></p>
+                                <p>Varinder Yadav</p>
                             </div>  
                         </div>
                         <div className='p11_1_2'>

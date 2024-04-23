@@ -124,10 +124,11 @@
     .grid-container2{
         flex-direction: row;
         font-size: .7em;
-        height: 300px;
+        height: 200px;
     }
     .grid-container3{
         width: 110%;
+       
         margin-left: 17px;
     }
     .grid-container4{
@@ -144,6 +145,7 @@
     }
     .div6-3-image img{
         width: 180px;
+        height: 170px;
         margin-top: 20px;
     }
 
@@ -153,6 +155,7 @@
     }
     .div6-1 ,.div6-2{
         margin-left: 15px;
+        height: auto;
     }
     .grid-container2{
         margin-left: 15px;
@@ -163,6 +166,7 @@
         margin-left: -15px;
     }
     .div6-5-image img{
-        margin-left: -20px;
+        margin-left: 10px;
+        height: 200px;
     }
 }
