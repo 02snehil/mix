@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import './Section9.css';
-import img9 from './image/img9.png';
 import img9_1 from './image/img9_1.png';
 import img9_2 from './image/img9_2.png';
 import img9_3 from './image/img9_3.png';
@@ -14,27 +13,20 @@ import img9_10 from './image/img9_10.png';
 import img9_11 from './image/img9_11.png';
 
 function Section9() {
-    const [animationCount, setAnimationCount] = useState(0);
+    // const [animationCount, setAnimationCount] = useState(0);
 
-    useEffect(() => {
-        const imgElement = document.querySelector('.img9 img');
-        const handleAnimationEnd = () => {
-            setAnimationCount(prevCount => prevCount + 1);
-        };
+    // useEffect(() => {
+    //     const imgElement = document.querySelector('.img9 img');
+    //     const handleAnimationEnd = () => {
+    //         setAnimationCount(prevCount => prevCount + 1);
+    //     };
 
-        imgElement.addEventListener('animationiteration', handleAnimationEnd);
+    //     imgElement.addEventListener('animationiteration', handleAnimationEnd);
 
-        return () => {
-            imgElement.removeEventListener('animationiteration', handleAnimationEnd);
-        };
-    }, []);
-
-    useEffect(() => {
-        const imgElement = document.querySelector('.img9 img');
-        if (animationCount >= 3) {
-            imgElement.classList.remove('animate');
-        }
-    }, [animationCount]);
+    //     return () => {
+    //         imgElement.removeEventListener('animationiteration', handleAnimationEnd);
+    //     };
+    // }, []);
 
     return (
         <div className="container9">
@@ -49,9 +41,7 @@ function Section9() {
                     <p>640 OXFORD VENTURES</p>
                 </div>
             </div>
-            <div className="img9">
-                <img src={img9} alt="img9" className="animate" />
-            </div>
+            
             <div className="sliding-images">
                 <img src={img9_1} alt="img9_1" />
                 <img src={img9_2} alt="img9_2" />

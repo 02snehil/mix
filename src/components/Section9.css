@@ -7,8 +7,8 @@
     justify-content: center;
     padding: 5%;
     margin-top: 100px;
-    position: relative;
-    overflow: hidden;
+   
+   
 }
 
 .boxes9 {
@@ -43,11 +43,6 @@
     text-align: center;
 }
 
-.img9 {
-    margin-top: 50px; 
-    height: 200px; 
-    position: relative;
-}
 
 .sliding-images {
     display: flex;
@@ -60,35 +55,17 @@
 
 .sliding-images img {
     flex-shrink: 0; 
-    width: 100px; 
+    width: 12%; 
     height: auto; 
     margin-right: 10px; 
+    margin-top: 250px;
 }
 
-.img9 img {
-    display: none; 
-    
-}
 
-.animate {
-    animation: moveLeftToRight 20s infinite; /* Change the duration as needed */
-}
 
-@keyframes animate {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
-  } 
 
 @media screen and (min-width: 768px) {
     .container9{
-        width: 100%;
-    }
-    .img9 img {
-        display: block; /* Show the animated image for larger screens */
-    }
-
-    .sliding-images {
-        display: none; /* Hide sliding images on larger screens */
-        
+        width: 90%;
     }
 }
