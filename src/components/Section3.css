@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* Ensure full width */
+    width: 100%; 
     
 }
 
@@ -44,30 +44,30 @@
     height: 250px;
     margin-right: 20px; /* Add margin between items */
     scroll-snap-align: start; /* Snap items to start of container */
-    width: 270px; /* Set width for larger screens */
+    width: 100%; /* Set width for larger screens */
     max-width: 100%; /* Ensure items don't exceed the container width */
 }
 
 .intro1_2 {
     color: white;
-    text-align: center; /* Center align text */
+    text-align: center; 
 }
 
 .p3_2 {
     color: #bcb9b9;
-    text-align: center; /* Center align text */
-    margin-top: 5px; /* Add some margin */
+    text-align: center; 
+    margin-top: 5px; 
 }
 
 .p3_1 {
     font-size: 1.2em;
     font-weight: 700;
-    text-align: center; /* Center align text */
-    margin-bottom: 5px; /* Add some margin */
+    text-align: center;
+    margin-bottom: 5px; 
 }
 
 .intro1_1 {
-    margin-top: 10px; /* Adjust margin */
+    margin-top: 10px; 
 }
 
 /* Media Queries */

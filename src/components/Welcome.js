@@ -36,7 +36,7 @@ function Welcome() {
   return (
     <div>
       <h2>Welcome, {location.state.id}!</h2> {/* for node server with mongodb*/}
-      {/* <h2>Welcome, {email}!</h2> */}
+      {/* <h2>Welcome, {email}!</h2> */}   {/* for if u login or sigh up with google*/}
       <h4>This is your dashboard.</h4>
       <button onClick={handleLogout}>Logout</button>
     </div>

@@ -84,7 +84,7 @@ function Section3() {
             image: img3_1_5,
             logo: logo3_1_5
         },
-        // Add more alumni data objects as needed
+        
     ];
 
     return (
