@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
+   
 
 }
 .videos5_1{
@@ -10,7 +11,6 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
-
 }
 .videos5_2{
     border: solid 1px #f9f9f9;
@@ -64,14 +64,14 @@
     cursor: pointer;
     padding: 5px;
 }
+ 
+
 @media screen and (max-width: 768px) {
     .container5 {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding-left: 20px; /* Adjust padding for smaller screens */
         width: 250px;
-        margin-top: -200px;
+        
     }
-    
-
     .videos5_1,
     .videos5_2 {
         flex-direction: column; /* Change to column layout for smaller screens */    

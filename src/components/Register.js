@@ -161,8 +161,8 @@ function Register(){
                     <br /> 
                 </div>
             </div>
-            <button onClick={handleGoogleRegister} className="buttonregister"><img src={google_icon} alt="register_logo" className="google_icon" />&emsp;Sign up with Google</button>
-            <h4 className="register_link"><span style={{fontWeight:'500'}}>Have an account? </span><a href="/login" style={{textDecoration:'none',color:'black'}}>Login</a></h4>
+            <button onClick={handleGoogleRegister} className="buttonregister"><img src={google_icon} alt="register_logo" className="google_icon" />&emsp;<span style={{marginLeft:'-10px'}}>Sign up with Google</span></button>
+            <h4 className="register_link"><span style={{fontWeight:'500',marginLeft:'80px'}}>Have an account? </span><a href="/login" style={{textDecoration:'none',color:'black'}}>Login</a></h4>
        </div>
         </>
     );

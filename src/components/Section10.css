@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: auto;
+    margin-top: -15px;
 }
 .line10{
     background: rgb(23,20,33);
@@ -23,6 +25,7 @@
     margin-top: 150px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .box10_1{
     display: flex;

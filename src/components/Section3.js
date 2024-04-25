@@ -1,3 +1,4 @@
+// Section3.js
 import React, { useState } from "react";
 import "./Section3.css";
 import img3_1_1 from './image/img3_1_1.png'
@@ -12,15 +13,15 @@ import logo3_1_4 from './image/logo3_1_4.png'
 import logo3_1_5 from './image/logo3_1_5.png'
 
 function Section3() {
-    
     const [slideIndex, setSlideIndex] = useState(0);
 
     const alumniData = [
+        
         {
-            name: "Rishabh Dev",
-            position: "Co Founder",
-            image: img3_1_1,
-            logo: logo3_1_1
+            name: "Abhishek Shukla",
+            position: "Principal Product Manager",
+            image: img3_1_2,
+            logo: logo3_1_2
         },
         {
             name: "Abhishek Shukla",
@@ -28,6 +29,13 @@ function Section3() {
             image: img3_1_2,
             logo: logo3_1_2
         },
+        {
+            name: "Prashanth Bhaskaran",
+            position: "Product Manager",
+            image: img3_1_3,
+            logo: logo3_1_3
+        },
+        
         {
             name: "Prashanth Bhaskaran",
             position: "Product Manager",
@@ -78,16 +86,6 @@ function Section3() {
         },
         // Add more alumni data objects as needed
     ];
-    
-
-
-    const nextSlide = () => {
-        setSlideIndex((prevIndex) => prevIndex + 1);
-    };
-
-    const prevSlide = () => {
-        setSlideIndex((prevIndex) => prevIndex - 1);
-    };
 
     return (
         <>
@@ -96,24 +94,20 @@ function Section3() {
                     <p>Check out <span> our Pesto alumni.</span></p>
                 </div>
                 <div className="alumi_intro">
-                    {alumniData.slice(slideIndex, slideIndex + 4).map((alumni, index) => (
+                    {alumniData.map((alumni, index) => (
                         <div className="intro1" key={index}>
                             <div className="intro1_1">
-                                <img src={alumni.image} alt={`img_${slideIndex + index + 1}`} />
+                                <img src={alumni.image} alt={`img_${index + 1}`} />
                             </div>
                             <div className="intro1_2">
                                 <p className="p3_1">{alumni.name}</p>
                                 <p className="p3_2">{alumni.position}</p>
                             </div>
                             <div className="intro1_3">
-                                <img src={alumni.logo} alt={`logo_${slideIndex + index + 1}`} />
+                                <img src={alumni.logo} alt={`logo_${index + 1}`} />
                             </div>
                         </div>
                     ))}
-                </div>
-                <div className="navigation">
-                    <button onClick={prevSlide} disabled={slideIndex === 0}>{'<'}</button>
-                    <button onClick={nextSlide} disabled={slideIndex >= alumniData.length - 4}>{'>'}</button>
                 </div>
             </div>
         </>

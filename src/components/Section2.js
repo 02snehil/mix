@@ -45,7 +45,7 @@ function Section2(){
                         Whether it is Product, Growth, Design, 
                         Management, Business, Tech & Data  
                         GrowthSchool is the place to learn from top  
-                        experts in the field.
+                        experts in the fields.
                     </h4>
                     <button className="explore_programs">
                         Explore Programs
@@ -56,7 +56,7 @@ function Section2(){
                         some of the top companies
                     </p> */}
                 </div>
-                <div className="images">
+                <div className="images" style={{transform:"translate3d(-98.168%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;"}}>
                     <img src={icons1} alt="icons1" className="leftToRight" />
                 </div>
                 <div className="images">

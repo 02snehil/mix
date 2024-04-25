@@ -142,13 +142,12 @@ margin-top: 20px;
       display: none; 
     }
     .buttonregister {
-      width: 257px; 
+      width: 255px; 
       margin-top: 0px;
       margin-left: 40px;
+      
     }
-    .google_icon{
-        margin-left: -5px;
-    }
+    
     .or-container{
         width: 40px;
         margin-top: -10px;
@@ -156,7 +155,7 @@ margin-top: 20px;
     }
     .register_link {
       margin-left: 0;
-      text-align: center;
+      text-align: left;
     }
     .input{
         width:80%;
@@ -174,5 +173,10 @@ margin-top: 20px;
     .p2{
         margin-left: 50px;
     }
+    .buttonregister img{
+    margin-left: 35px;
+    }
+    
+    
    
   }

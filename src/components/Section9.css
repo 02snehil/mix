@@ -67,13 +67,22 @@
 
 .img9 img {
     display: none; 
+    
 }
-/* @keyframes animate {
+
+.animate {
+    animation: moveLeftToRight 20s infinite; /* Change the duration as needed */
+}
+
+@keyframes animate {
     from { transform: translateX(-100%); }
     to { transform: translateX(100%); }
-  }  */
+  } 
 
 @media screen and (min-width: 768px) {
+    .container9{
+        width: 100%;
+    }
     .img9 img {
         display: block; /* Show the animated image for larger screens */
     }

@@ -39,13 +39,13 @@
     box-shadow: 1px 1px 0px #ffffff;
 }
 @keyframes moveLeftToRight {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
+    from { transform: translateX(-95%); }
+    to { transform: translateX(95%); }
   }
   
   @keyframes moveRightToLeft {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+    from { transform: translateX(95%); }
+    to { transform: translateX(-95%); }
   }
   
   .images {
@@ -71,19 +71,22 @@
   }
   
   /* Media Queries */
+
+
+
+
+
   @media screen and (max-width: 768px){
-    .container2{
-      width: 100%;
-    }
+    
     .heading2 h1{
       margin-top: 50px;
-      font-size:1em;
+      font-size:3em;
       margin-left: -150px;
     }
     .heading2 h4{
-      font-size:.55em;
+      font-size:1em;
       margin-left: -150px;
-      width: 80%;
+      width: 65%;
     }
     .explore_programs{
       width: 100px;
@@ -93,7 +96,15 @@
       margin-top: 0px;
     }
     .images{
-      width: 350px;
-      height: 0px;
+      width: 100%;
+    }
+    .images img{
+      width: 1200px;
+    }
+    @media screen and (max-width: 356px) {
+      .container2{
+        width: 360px;
+      }
     }
   }
+

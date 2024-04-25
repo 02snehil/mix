@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: -15px;
 }
 .heading11 p{
     color: aliceblue;
@@ -57,8 +58,8 @@
 
 @media screen and (max-width: 768px) {
     .container11{
-        margin-top:-1px;
-        width: 360px;
+        margin-top:-3px;
+        width: 100%;
     }
     .heading11{
         font-size: .9em;
@@ -83,7 +84,7 @@
 
     .p11_1, .p11_1_2 {
         font-size: 0.9em; /* Adjust font size for smaller screens */
-        margin-top: 8px; /* Adjust margin top for smaller screens */
+        margin-top: 40px; /* Adjust margin top for smaller screens */
     }
 
     .heading11_1_1 {

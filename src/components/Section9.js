@@ -10,6 +10,8 @@ import img9_6 from './image/img9_6.png';
 import img9_7 from './image/img9_7.png';
 import img9_8 from './image/img9_8.png';
 import img9_9 from './image/img9_9.png';
+import img9_10 from './image/img9_10.png';
+import img9_11 from './image/img9_11.png';
 
 function Section9() {
     const [animationCount, setAnimationCount] = useState(0);
@@ -60,6 +62,8 @@ function Section9() {
                 <img src={img9_7} alt="img9_7" />
                 <img src={img9_8} alt="img9_8" />
                 <img src={img9_9} alt="img9_9" />
+                <img src={img9_10} alt="img9_10" />
+                <img src={img9_11} alt="img9_11" />
             </div>
         </div>
     );

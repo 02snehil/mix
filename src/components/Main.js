@@ -31,7 +31,7 @@ function Main(){
              <Section11 />
              <Section12 />
              <Section13 />
-             <Section14 />
+             <Section14 /> 
         </>
     );
 }
