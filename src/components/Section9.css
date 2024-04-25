@@ -68,4 +68,11 @@
     .container9{
         width: 90%;
     }
+    
+}
+
+@media screen and (max-width: 425px){
+    .sliding-images img{
+        width: 100px;
+    }
 }

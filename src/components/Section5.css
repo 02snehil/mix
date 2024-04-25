@@ -21,7 +21,7 @@
     margin-top: 20px;
     
 }
-.videos5_1_1, .videos5_2_2{
+.videos5_1_1{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -29,12 +29,12 @@
     margin-right: 40px;
     border: solid 1px #f9f9f9;
     padding: 2px;
-    padding-top: 0px;
+    padding-top: 25px;
     border-radius: 10px;
     
 }
 .videos5_1_2{
-    margin-top: -5px;
+    padding-top: 15px;
 }
 
 .videos5_1_1_1, .videos5_1_1_2, .videos5_1_1_3{
